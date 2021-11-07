@@ -1,0 +1,391 @@
+@font-face {
+  font-family: 'Samsung Sharp Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Samsung Sharp Sans Regular'), url('./fonts/samsungsharpsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Samsung Sharp Sans Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Samsung Sharp Sans Medium'), url('./fonts/samsungsharpsans-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Samsung Sharp Sans Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Samsung Sharp Sans Bold'), url('./fonts/samsungsharpsans-bold.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Samsung Sharp Sans Bold', 'Montserrat', sans-serif;;
+}
+
+/* HEADER */
+/* PROMO */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.promo-container {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.promo-poster {
+  width: 997px;
+  background-image: url("./images/promo-img.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo-poster-remark {
+  display: none;
+  font-weight: 700;
+}
+
+.promo-description {
+  width: 443px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  margin-top: 80px;
+}
+
+.promo-title {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.promo-img {
+  margin-bottom: 20px;
+}
+
+.promo-info {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.promo-info span {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.promo-small-info {
+  display: none;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.promo-small-info span {
+  font-size: 46px;
+}
+
+.promo-old-price {
+  position: relative;
+  font-size: 36px;
+  text-align: center;
+  color: #939598;
+}
+
+.promo-old-price::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  display: block;
+  width: 125px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(-10deg);
+}
+
+.promo-old-price span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.promo-price {
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.promo-price span {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.promo-remark {
+  align-self: flex-end;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* MAIN */
+/* CATALOG */
+.catalog {
+  margin: 0 auto;
+}
+
+.catalog-container {
+  width: 1020px;
+  margin: 0 auto;
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  margin-bottom: 70px;
+}
+
+.product-image {
+  margin-bottom: 35px;
+  transition: transform 500ms;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.product-old-price {
+  position: relative;
+  margin-right: 20px;
+  color: #828282;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.product-old-price::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(-10deg);
+}
+
+.product-price {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  margin-top: 24px;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  background: transparent;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.product-btn:hover {
+  color: #828282;
+  border: 2px solid #828282;
+}
+
+.catalog-extra {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* PROMO-DETAILS */
+
+.promo-details-container {
+  width: 1020px;
+  margin: 0 auto 70px;
+}
+
+.promo-details-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.title-accent {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.promo-list {
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: circle;
+  margin-bottom: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 500;
+}
+.promo-details-btn {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #084895;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: background-color 300ms;
+}
+.promo-details-btn:hover {
+  background-color: #00a4e4;
+}
+
+/* FOOTER */
+
+.promo-disclaimer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #828282;
+  margin: 0 0 35px;
+  padding: 0 35px 0;
+  text-align: justify;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 720px;
+  }
+  .promo-container {
+    width: 720px;
+    flex-direction: column;
+  }
+  .promo-poster {
+    position: relative;
+    width: 720px;
+    height: 700px;
+    background-image: url("./images/promo-small-img.png");
+  }
+
+  .promo-poster-remark {
+    position: absolute;
+    display: block;
+    right: 20px;
+    bottom: 15px;
+  }
+
+  .promo-description {
+    width: 100%;
+  }
+
+  .info-block {
+    width: 100%;
+  }
+
+  .promo-title {
+    font-size: 39px;
+    margin-bottom: 20px;
+  }
+
+  .promo-img {
+    margin-bottom: 10px;
+  }
+
+  .promo-info {
+    display: none;
+  }
+
+  .promo-small-info {
+    display: block;
+  }
+
+  .promo-old-price {
+    font-size: 30px;
+  }
+
+  .promo-old-price::before {
+    left: -8px;
+    top: 17px;
+    width: 100px;
+  }
+
+  .promo-old-price span {
+    font-size: 20px;
+  }
+
+  .promo-price {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  .promo-price span {
+    font-size: 28px;
+  }
+
+  .promo-remark {
+    display: none;
+  }
+
+  .catalog-container {
+    width: 720px;
+  }
+
+  .promo-details-container {
+    width: 720px;
+  }
+
+  .promo-list {
+    padding: 0 15px 0 30px;
+  }
+
+  .promo-details-title {
+    font-size: 32px;
+  }
+
+  .title-accent {
+    font-size: 34px;
+  }
+
+  .promo-disclaimer {
+    padding: 0 15px 0;
+  }
+
+}

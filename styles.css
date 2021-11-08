@@ -104,6 +104,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .promo-small-info span {
@@ -281,6 +282,7 @@ body {
   line-height: 36px;
   font-weight: 500;
 }
+
 .promo-details-btn {
   display: block;
   width: 200px;
@@ -294,6 +296,7 @@ body {
   font-size: 18px;
   transition: background-color 300ms;
 }
+
 .promo-details-btn:hover {
   background-color: #00a4e4;
 }
@@ -312,8 +315,6 @@ body {
 }
 
 @media (max-width: 1020px) {
-
-
   .product-title {
     font-size: 24px;
   }
@@ -325,7 +326,6 @@ body {
   .product-price {
     font-size: 24px;
   }
-
 }
 
 @media (max-width: 720px) {
@@ -420,5 +420,4 @@ body {
   .promo-disclaimer {
     padding: 0 15px 0;
   }
-
 }

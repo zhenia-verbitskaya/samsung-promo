@@ -33,16 +33,15 @@ body {
   font-family: 'Samsung Sharp Sans Bold', 'Montserrat', sans-serif;;
 }
 
-/* HEADER */
+/* #region HEADER */
 /* PROMO */
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .promo-container {
   display: flex;
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -50,6 +49,8 @@ body {
   width: 997px;
   background-image: url("./images/promo-img.jpg");
   background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
 }
 
 .promo-poster-remark {
@@ -59,9 +60,11 @@ body {
 
 .promo-description {
   width: 443px;
+  /* flex-shrink: 1; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
 }
 
 .info-block {
@@ -149,18 +152,21 @@ body {
   margin-bottom: 10px;
 }
 
+/* #endregion */
+
 /* MAIN */
-/* CATALOG */
+
+/* #region CATALOG */
 .catalog {
   margin: 0 auto;
 }
 
 .catalog-container {
-  width: 1020px;
+  max-width: 1020px;
   margin: 0 auto;
   padding-top: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -169,6 +175,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 340px;
+  flex-shrink: 1;
+  /* flex-grow: 1; */
   margin-bottom: 70px;
 }
 
@@ -184,6 +192,7 @@ body {
 .product-title {
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
 }
 
 .product-old-price {
@@ -235,14 +244,19 @@ body {
 }
 
 .catalog-extra {
+  max-width: 1020px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
-/* PROMO-DETAILS */
+/* #endregion */
+
+/* #region PROMO-DETAILS */
 
 .promo-details-container {
-  width: 1020px;
+  max-width: 1020px;
   margin: 0 auto 70px;
 }
 
@@ -262,6 +276,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   list-style-type: circle;
   margin-bottom: 60px;
+  padding-left: 30px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 500;
@@ -283,6 +298,8 @@ body {
   background-color: #00a4e4;
 }
 
+/* #endregion */
+
 /* FOOTER */
 
 .promo-disclaimer {
@@ -294,19 +311,39 @@ body {
   text-align: justify;
 }
 
+@media (max-width: 1020px) {
+
+
+  .product-title {
+    font-size: 24px;
+  }
+
+  .product-old-price {
+    font-size: 22px;
+  }
+
+  .product-price {
+    font-size: 24px;
+  }
+
+}
+
 @media (max-width: 720px) {
   .container {
-    width: 720px;
+    max-width: 720px;
   }
+
   .promo-container {
-    width: 720px;
     flex-direction: column;
   }
+
   .promo-poster {
     position: relative;
-    width: 720px;
+    width: 100%;
     height: 700px;
     background-image: url("./images/promo-small-img.png");
+    background-size: cover;
+    background-position: center;
   }
 
   .promo-poster-remark {
@@ -366,14 +403,6 @@ body {
 
   .promo-remark {
     display: none;
-  }
-
-  .catalog-container {
-    width: 720px;
-  }
-
-  .promo-details-container {
-    width: 720px;
   }
 
   .promo-list {
